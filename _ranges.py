@@ -31,5 +31,6 @@ for num in range(1, 10, 2):
 # Forma 4
 for num in range(10, 0, -3):
     print(num)
+    
 """
 
