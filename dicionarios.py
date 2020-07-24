@@ -171,8 +171,7 @@ Carrinho de Compras
         - nome;
         - quantidade;
         - preço;
-        
-"""
+
 
 # 1 -  Poderiamos usar uma lista para isso? Sim
 
@@ -188,3 +187,87 @@ print(carrinho)
 
 # Teriamos que saber qual é o indice de cada informação no produto.
 
+# 2 - Poderiamos usar uma tupla para isto? Sim
+
+produto1 = ('PS4', 1, 2.300)
+produto2 = ('PS3', 1, 150.00)
+
+carrinho = (produto1, produto2)
+
+print(carrinho)
+
+# Teriamos que saber qual é o indice de cada informação do produto.
+
+# 3 - Poderiamos usar o dicionario para isso? Sim
+
+carrinho = []
+
+produto1 = {'nome': 'PS4', 'quantidade': 1, 'preço': 2.300}
+produto2 = {'nome': 'PS3', 'quantidade': 1, 'preço': 300.00}
+
+carrinho.append(produto1)
+carrinho.append(produto2)
+
+print(carrinho)
+
+# Deste forma facilmente adicionamos ou removemos produtos no carrinho e em cada produto
+# podemos ter a certeza sobre cada informação
+
+# Limpar o dicionario zerar dados
+
+d.clear()
+print(d)
+
+# Metodos de dicionarios
+
+d = dict(a=1, b=2, c=3)
+
+print(d)
+print(type(d))
+
+# Copiando um dicionario para outro
+
+# Forma 1 # Deep Copy
+
+novo = d.copy()
+
+print(novo)
+
+novo['d'] = 4
+
+print(d)
+print(novo)
+
+# Forma 2 Shallow Copy
+
+novo = d
+
+print(novo)
+
+novo['d'] = 4
+
+print(d)
+print(novo)
+
+"""
+
+# Forma não usual de criação de dicionarios
+
+outro = {}.fromkeys('a', 'b')
+
+print(outro)
+print(type(outro))
+
+usuario = {}.fromkeys(['nome', 'pontos', 'email', 'profile'], 'desconhecido')
+print(usuario)
+print(type(usuario))
+
+# o metodo fromkeys recebe dois parametros  um iteravel e um valor.
+# Ele vai gerar para cada valor do iteravel uma chave e ira atribuir a esta chave o valor informado.
+
+veja = {}.fromkeys('teste', 'valor')
+print(veja)
+
+
+veja = {}.fromkeys(range(1, 11), 'novo')
+print(veja)
