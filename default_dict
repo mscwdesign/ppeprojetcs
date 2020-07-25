@@ -1,0 +1,11 @@
+"""
+Módulo Collections - Default Dict
+
+# RECAP DICIONARIO
+dicionario = {'curso': 'Programação em Python Essencial'}
+print(dicionario)
+
+print(dicionario['curso'])
+
+"""
+
