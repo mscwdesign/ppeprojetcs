@@ -147,7 +147,7 @@ print(s)
 s.clear()
 print(s)
 
-"""
+# Precisamos gerar um conjunto com nomes de estudantes unicos
 
 # Metodos matemáticos de conjuntos
 
@@ -156,11 +156,45 @@ print(s)
 estudantes_python = {'Marcos', 'Patricia', 'Ellen', 'Pedro', 'Julia', 'Guilherme'}
 estudantes_java = {'Fernando', 'Gustavo', 'Julia', 'Ana', 'Patricia'}
 
-# Veja que alguns alunos que estudam python tbm estudam java.
-
-# Precisamos gerar um conjunto com nomes de estudantes unicos
-
 # Forma 1 - Utilizando union
 
 unicos1 = estudantes_python.union(estudantes_java)
 print(unicos1)
+
+# Forma 2 - utilizando o caractere pipe |
+unicos2 = estudantes_python | estudantes_java
+print(unicos2)
+
+# Veja que alguns alunos que estudam python tbm estudam java.
+
+# Gerar um conjunto de estudantes que estão em ambos os cursos.
+
+# Forma 1 - utilizando intersection
+
+ambos1 = estudantes_python.intersection(estudantes_java)
+print(ambos1)
+
+# Forma 2 - Utilizando o &
+
+ambos2 = estudantes_python & estudantes_java
+print(ambos2)
+
+# Gerar um conjunto de estudantes que não estão no outro curso.
+
+so_python = estudantes_python.difference(estudantes_java)
+print(so_python)
+
+so_java = estudantes_java.difference((estudantes_python))
+print(so_java)
+
+"""
+
+# Soma*, Maior Valor*, Valor Minimo*, Tamanho
+# * se os valores forem todos inteiros ou reais.
+
+s = {1, 2, 3, 4, 5, 6}
+
+print(sum(s))
+print(max(s))
+print(min(s))
+print(len(s))
