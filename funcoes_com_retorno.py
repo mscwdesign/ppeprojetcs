@@ -44,8 +44,6 @@ OBS Sobre a palavra reservada return
 2 - Podemos ter, em uma função diferentes returns;
 3 - Podemos em uma função retornar qlqr tipo de dado e ate mesmo multiplos valores
 
-"""
-
 # Exemplo 1
 
 def diz_oi():
@@ -53,3 +51,28 @@ def diz_oi():
     print('Estou sendo executado após o retorno')
 
 print(diz_oi())
+
+# Exemplo 2
+
+def nova_função():
+    variavel = False
+    if variavel:
+        return 4
+    elif variavel is None:
+        return 3.2
+    return 'b'
+
+print(nova_função())
+
+"""
+
+# Exemplo 3
+
+def outra_funcao():
+    return 2, 3, 4, 5
+
+# num1, num2, num3, num4 = outra_funcao()
+
+# print(outra_funcao())
+
+print(outra_funcao())
