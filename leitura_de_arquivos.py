@@ -17,5 +17,19 @@ será gerado o erro FileNotFoundError
 
 arquivo = open('texto.txt')
 
-print(arquivo)
-print(type(arquivo))
+# print(arquivo)
+# print(type(arquivo))
+
+# Para ler o arquivo após a sua abertura usamos a função read()
+
+ret = arquivo.read()
+
+print(type(ret))
+print(ret)
+
+print(arquivo.read())
+
+# OBS o Python utiliza um recurso para trabalhar com arquivos chamado cursos esse cursos
+# funciona como o cursor quando estamos escrevendo
+
+# A função read() le todo conteudo do arquivo.
