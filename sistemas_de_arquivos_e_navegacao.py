@@ -16,10 +16,26 @@ print(os.getcwd())
 
 # checando diretorio relativo ou absoluto
 
-print(os.path.isabs('C:/'))
+print(os.path.isabs('C:\\'))
 
-"""
+# podemos identificar o OS com o módulo 'os'
+
+print(os.name) # posix linux e mac nt windows
+
 
 # Fazer import
+import os
+
+
+# podemos ter mais detalhes do OS
+
+print(os.uname()) # no windows não funfa
+
+
+import sys
+
+print(sys.platform)
+"""
+
 import os
 
