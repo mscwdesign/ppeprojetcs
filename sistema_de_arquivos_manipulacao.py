@@ -44,8 +44,21 @@ os.mkdir('templates')
 os.makedirs('templates/geek/pyhton')
 
 os.makedirs('templates2/novo2/outro2', exist_ok=True)
-"""
+
 
 import os
 
 os.rename('templates', 'python2')
+
+import os
+os.remove('C:\\Nova pasta\\teste.txt')
+os.remove('C:\\Nova pasta\\teste2.txt')
+
+os.rmdir('python')
+"""
+import os
+
+for arquivo in os.scandir('C:\\Users\\Mateus\\AppData\\Local\\Microsoft\\Windows\\INetCache'):
+    if arquivo.is_file():
+        os.remove(arquivo.path)
+
