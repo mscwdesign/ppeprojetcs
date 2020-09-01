@@ -26,7 +26,6 @@ print(os.name) # posix linux e mac nt windows
 # Fazer import
 import os
 
-
 # podemos ter mais detalhes do OS
 
 print(os.uname()) # no windows não funfa
